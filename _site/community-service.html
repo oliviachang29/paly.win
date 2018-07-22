@@ -34,7 +34,7 @@
 	<style>
 	.nav {
   background-color: green;
-  padding: 15px 15px 0;
+  padding: 15px;
 }
 .nav a {
   color: white;
@@ -50,8 +50,8 @@
 
 #logo {
   font-weight: bold;
-  /*text-transform: uppercase;*/
-  letter-spacing: 1px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 #desc {
@@ -97,15 +97,16 @@ iframe {
 
 .card {
   height: 100%;
-  padding: 30px 15px 15px;
+  padding: 15px;
   text-align: center;
   transition: all 0.25s;
 }
 .card img {
   transition: all 0.5s;
   height: 100px;
-  /*width: 100px;*/
-  /*object-fit: cover;*/
+}
+.card:hover {
+  opacity: 0.5;
 }
 .card h5 {
   color: black;
@@ -121,15 +122,8 @@ iframe {
 	</style>
 </head>
 	<ul class="nav">
-  <div class="container-fluid">
-  	<div class="row">
-  		<div class="col">
-    		<li class="nav-item"><a href="/" id="logo">paly.win</a></li>
-    	</div>
-    	<div class="col">
-    		<li class="nav-item hidden-sm hidden-xs"><p id="desc">like paly.net, but way faster.</p>
-    	</li>
-    </div>
+  <div class="container">
+    <li class="nav-item"><a href="/" id="logo">paly.win</a></li>
   </div>
 </ul>
 	<body>
@@ -155,11 +149,11 @@ iframe {
 This is a civil award issued to recognize individuals that achieve a certain number of volunteer hours within a 12-month period. Recipients will receive a personalized certificate, an official pin, and a congratulatory letter from the president of the United States. Students may be awarded multiple President’s Volunteer Service Awards during their time at Paly.</p>
 <h3>What are the levels of the President's Award?</h3>
 Although there are multiple levels of this national award, Paly will only award the President's Award at the following levels:</p>
-<h4>Younger than 16</h4>
+<h5>Younger than 16</h5>
 <ul>
 	<li>Gold Award: 100+ hours</li>
 </ul>
-<h4>Older than 16</h4>
+<h5>Older than 16</h5>
 <ul>
 	<li>Bronze Award: 100 - 174 hours</li>
 	<li>Silver Award: 175 - 249 hours</li>
@@ -193,7 +187,7 @@ Although there are multiple levels of this national award, Paly will only award 
 					Palo Alto, California 94301</p>
 				</a>
 				<div id="footer-copyright">
-					<p>&#xa9; <script>document.write(new Date().getFullYear())</script><a href="https://oliviachang.me"> Olivia Chang.</a> All rights reserved.</p>
+					<p>&#xa9; <script>document.write(new Date().getFullYear())</script><a href="https://oliviachang.me" target="_blank"> Olivia Chang.</a> All rights reserved.</p>
 				</div>
 			</div>
 			<div class="col">

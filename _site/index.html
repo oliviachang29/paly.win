@@ -34,7 +34,7 @@
 	<style>
 	.nav {
   background-color: green;
-  padding: 15px 15px 0;
+  padding: 15px;
 }
 .nav a {
   color: white;
@@ -50,8 +50,8 @@
 
 #logo {
   font-weight: bold;
-  /*text-transform: uppercase;*/
-  letter-spacing: 1px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 #desc {
@@ -97,15 +97,16 @@ iframe {
 
 .card {
   height: 100%;
-  padding: 30px 15px 15px;
+  padding: 15px;
   text-align: center;
   transition: all 0.25s;
 }
 .card img {
   transition: all 0.5s;
   height: 100px;
-  /*width: 100px;*/
-  /*object-fit: cover;*/
+}
+.card:hover {
+  opacity: 0.5;
 }
 .card h5 {
   color: black;
@@ -121,15 +122,8 @@ iframe {
 	</style>
 </head>
 	<ul class="nav">
-  <div class="container-fluid">
-  	<div class="row">
-  		<div class="col">
-    		<li class="nav-item"><a href="/" id="logo">paly.win</a></li>
-    	</div>
-    	<div class="col">
-    		<li class="nav-item hidden-sm hidden-xs"><p id="desc">like paly.net, but way faster.</p>
-    	</li>
-    </div>
+  <div class="container">
+    <li class="nav-item"><a href="/" id="logo">paly.win</a></li>
   </div>
 </ul>
 	<body>
@@ -148,114 +142,134 @@ iframe {
 	<div class="col-lg">
 		<div class="row">
 			<div class="col-md-6">
+	<a href="https://id.pausd.org/">
 	<div class="card">
-		<a href="https://id.pausd.org/">
+		
 			<!-- <img src="/assets/images/idportal.jpg" alt="ID Portal"> -->
 			<div class="card-body">
 				<h5 class="card-title">ID Portal</h5>
-				<!-- <åp class="card-text">Schoology, Infinite Campus, Google Drive, NoodleTools.</p> -->
+				<p class="card-text">Schoology, Infinite Campus, Google Drive, NoodleTools.</p>
 			</div>
-		</a>
+		
 	</div>
+	</a>
 </div>
 			<div class="col-md-6">
+	<a href="https://connection.naviance.com/family-connection/auth/login/?hsid=pahs">
 	<div class="card">
-		<a href="https://connection.naviance.com/family-connection/auth/login/?hsid=pahs">
+		
 			<!-- <img src="/assets/images/naviance.png" alt="Naviance"> -->
 			<div class="card-body">
 				<h5 class="card-title">Naviance</h5>
-				<!-- <åp class="card-text">GPA, college resources, SAT/ACT test scores.</p> -->
+				<p class="card-text">GPA, college resources, SAT/ACT test scores.</p>
 			</div>
-		</a>
+		
 	</div>
+	</a>
 </div>
 			<div class="col-md-6">
+	<a href="/campus-map">
 	<div class="card">
-		<a href="https://paly.net/campus-map">
+		
 			<!-- <img src="/assets/images/campus-map.jpg" alt="Campus Map"> -->
 			<div class="card-body">
 				<h5 class="card-title">Campus Map</h5>
-				<!-- <åp class="card-text">How to get around.</p> -->
+				<p class="card-text">How to get around.</p>
 			</div>
-		</a>
+		
 	</div>
+	</a>
 </div>
 			<div class="col-md-6">
+	<a href="/bell-schedule">
 	<div class="card">
-		<a href="https://paly.net/daily-bell-schedule">
+		
 			<!-- <img src="/assets/images/bell-schedule.jpg" alt="Bell Schedule"> -->
 			<div class="card-body">
 				<h5 class="card-title">Bell Schedule</h5>
-				<!-- <åp class="card-text">Which class is when.</p> -->
+				<p class="card-text">Which class is when.</p>
 			</div>
-		</a>
+		
 	</div>
+	</a>
 </div>
 			<div class="col-md-6">
+	<a href="/community-service">
 	<div class="card">
-		<a href="/community-service">
+		
 			<!-- <img src="/assets/images/community-service.jpg" alt="Community Service Information"> -->
 			<div class="card-body">
 				<h5 class="card-title">Community Service Information</h5>
-				<!-- <åp class="card-text">How to get the President's Award.</p> -->
+				<p class="card-text">How to get the President's Award.</p>
 			</div>
-		</a>
+		
 	</div>
+	</a>
 </div>
 			<div class="col-md-6">
+	<a href="/attendance-policy">
 	<div class="card">
-		<a href="/attendance-policy">
+		
 			<!-- <img src="/assets/images/attendance-policy.jpg" alt="Attendance Policy"> -->
 			<div class="card-body">
 				<h5 class="card-title">Attendance Policy</h5>
-				<!-- <åp class="card-text">What to do when you miss class.</p> -->
+				<p class="card-text">What to do when you miss class.</p>
 			</div>
-		</a>
+		
 	</div>
+	</a>
 </div>
 			<div class="col-md-6">
+	<a href="/work-permit">
 	<div class="card">
-		<a href="/work-permit">
+		
 			<!-- <img src="/assets/images/work-permit.jpg" alt="Work Permit"> -->
 			<div class="card-body">
 				<h5 class="card-title">Work Permit</h5>
-				<!-- <åp class="card-text">How and where to apply for one.</p> -->
+				<p class="card-text">How and where to apply for one.</p>
 			</div>
-		</a>
+		
 	</div>
+	</a>
 </div>
 			<div class="col-md-6">
+	<a href="https://paly.net/sites/default/files/PalyCourseCatalog1819_Feb20.pdf">
 	<div class="card">
-		<a href="https://paly.net/sites/default/files/PalyCourseCatalog1819_Feb20.pdf">
+		
 			<!-- <img src="/assets/images/course-catalog.jpg" alt="Course Catalog"> -->
 			<div class="card-body">
 				<h5 class="card-title">Course Catalog</h5>
-				<!-- <åp class="card-text">List of classes for 2018-2019 school year.</p> -->
+				<p class="card-text">List of classes for 2018-2019 school year.</p>
 			</div>
-		</a>
+		
 	</div>
+	</a>
 </div>
 			<div class="col-md-6">
+	<a href="/nytimes">
 	<div class="card">
-		<a href="https://paly.net">
-			<!-- <img src="/assets/images/paly.jpg" alt="paly.net"> -->
-			<div class="card-body">
-				<h5 class="card-title">paly.net</h5>
-				<!-- <åp class="card-text">Official Paly Site.</p> -->
-			</div>
-		</a>
-	</div>
-</div>
-			<div class="col-md-6">
-	<div class="card">
-		<a href="/nytimes">
+		
 			<!-- <img src="/assets/images/nytimes.jpg" alt="NYTimes Academic Pass"> -->
 			<div class="card-body">
 				<h5 class="card-title">NYTimes Academic Pass</h5>
-				<!-- <åp class="card-text">Get the New York Times for free.</p> -->
+				<p class="card-text">Get the New York Times for free.</p>
 			</div>
-		</a>
+		
 	</div>
+	</a>
+</div>
+			<div class="col-md-6">
+	<a href="/about">
+	<div class="card">
+		
+			<!-- <img src="" alt="About"> -->
+			<div class="card-body">
+				<h5 class="card-title">About</h5>
+				<p class="card-text">About this site.</p>
+			</div>
+		
+	</div>
+	</a>
 </div>
 		</div>
 	</div>
@@ -277,7 +291,7 @@ iframe {
 					Palo Alto, California 94301</p>
 				</a>
 				<div id="footer-copyright">
-					<p>&#xa9; <script>document.write(new Date().getFullYear())</script><a href="https://oliviachang.me"> Olivia Chang.</a> All rights reserved.</p>
+					<p>&#xa9; <script>document.write(new Date().getFullYear())</script><a href="https://oliviachang.me" target="_blank"> Olivia Chang.</a> All rights reserved.</p>
 				</div>
 			</div>
 			<div class="col">
