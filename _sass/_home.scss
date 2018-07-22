@@ -2,10 +2,15 @@
 	display: none !important;
 }
 
+.col-lg {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 iframe {
-	margin-left: 5%;
 	border-width: 0;
-	width: 90%;
+	margin: 0 auto;
+	height: 400px;
 	@media only screen and (min-width : 960px) {
 		margin-left: 0%;
 		height: 100%;
