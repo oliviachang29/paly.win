@@ -1,0 +1,30 @@
+.subscribe-image {
+	display: none !important;
+}
+
+iframe {
+	height: 800;
+	@media only screen and (min-width : 960px) {
+		height: 100%
+	}
+}
+.col-md-6 {
+	padding: 7.5px;
+}
+
+.card {
+	height: 100%;
+	padding: 30px 15px 15px;
+	text-align: center;
+	img {
+		height: 100px;
+		/*width: 100px;*/
+		/*object-fit: cover;*/
+	}
+	h5 {
+		color: black;
+	}
+	p {
+		color: gray;
+	}
+}

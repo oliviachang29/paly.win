@@ -1,0 +1,70 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0; }
+
+#wrap {
+  min-height: 100%;
+  padding: 2em 0; }
+
+#main {
+  /*overflow:auto;*/
+  padding-bottom: 100px; }
+
+footer {
+  background-color: #232323;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+  position: relative;
+  clear: both;
+  height: 100px;
+  margin-top: -100px; }
+
+.nav {
+  font-weight: bold;
+  background-color: green;
+  padding: 20px; }
+  .nav a {
+    color: white; }
+    .nav a:hover {
+      color: white; }
+
+.subscribe-image {
+  display: none !important; }
+
+iframe {
+  height: 800; }
+  @media only screen and (min-width: 960px) {
+    iframe {
+      height: 100%; } }
+
+.col-md-6 {
+  padding: 7.5px; }
+
+.card {
+  height: 100%;
+  padding: 30px 15px 15px;
+  text-align: center; }
+  .card img {
+    height: 100px;
+    /*width: 100px;*/
+    /*object-fit: cover;*/ }
+  .card h5 {
+    color: black; }
+  .card p {
+    color: gray; }
+
+h1, h2 {
+  padding: 30px 0 15px; }
+
+h3 {
+  padding: 15px 0 15px; }
+
+a {
+  opacity: 1;
+  transition: all .2s; }
+  a:hover {
+    text-decoration: none;
+    opacity: 0.8; }
