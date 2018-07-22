@@ -3,9 +3,13 @@
 }
 
 iframe {
-	height: 800;
+	margin-left: 5%;
+	border-width: 0;
+	width: 90%;
 	@media only screen and (min-width : 960px) {
-		height: 100%
+		margin-left: 0%;
+		height: 100%;
+		width: 100%;
 	}
 }
 .col-md-6 {
