@@ -30,7 +30,7 @@
 	<meta name="msapplication-config" content="/assets/images/favicon/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
 
-	<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="/assets/css/bootstrap.min.css"> -->
 	<style>
 	.nav {
   background-color: green;
@@ -49,9 +49,6 @@
 }
 
 #logo {
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 2px;
 }
 
 #desc {
@@ -68,26 +65,50 @@
 
 .col-lg {
   display: flex;
-  align-items: center;
   justify-content: center;
+}
+
+.col-lg .col-md-6 {
+  padding-left: 0;
 }
 
 .cal-container {
   width: 100%;
   overflow-x: hidden;
+  overflow-y: hidden;
+  @media only screen and (max-width: 960px) {
+    height: 402px;
+  }
+  margin-bottom: 15px;
 }
 
-iframe {
+.fw-iframe {
   border-width: 0;
-  margin: 0;
-  height: 400px;
-  width: 100%;
-  font-size: 100px;
+  margin: 0 auto;
 }
+
+@media only screen and (max-width: 960px) {
+  .fw-iframe {
+    height: 402px;
+  }
+  .iframe-sm {
+    display: block;
+  }
+  .iframe-md {
+    display: none;
+  }
+}
+
 @media only screen and (min-width: 960px) {
-  iframe {
-    margin-left: 0%;
-    height: 100%;
+  .fw-iframe {
+    height: 850px;
+  }
+  .iframe-sm {
+    display: none;
+  }
+  .iframe-md {
+    display: block;
+    margin-top: 15px;
   }
 }
 
@@ -134,14 +155,14 @@ iframe {
 					<div class="barba-container">
 						<div class="row">
 	<div class="col-lg cal-container">
-		<iframe frameborder="0" height="300" scrolling="no" src="https://www.google.com/calendar/embed?&#10;title=Paly%20Calendar&amp;&#10;mode=AGENDA&amp;&#10;showNav=0&amp;showTitle=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;&#10;height=400&amp;&#10;wkst=1&amp;&#10;bgcolor=%23FFFFFF&amp;&#10;src=rl5e5us91t88ihuhms6d1jkn44%40group.calendar.google.com&amp;&#10;color=%23856508&amp;&#10;src=btia3tuqhgiq8vuun1p377t2gg%40group.calendar.google.com&amp;color=%23AB8B00&amp;&#10;src=lg4nnf5a82c5ipsuhak50okcqc%40group.calendar.google.com&amp;&#10;color=%23B1365F&amp;&#10;src=tq0jq89u6d2dvirb8esem8fjt4%40group.calendar.google.com&amp;&#10;color=%23711616&amp;&#10;src=tc8fl1stcbrqdt9s3aa0k9h7ak%40group.calendar.google.com&amp;&#10;color=%235C1158&amp;&#10;src=palycalendar%40gmail.com&amp;&#10;color=%23125A12&amp;&#10;src=ipcq1o1l27kq5f20pbh83it5qc%40group.calendar.google.com&amp;&#10;color=%235A6986&amp;&#10;src=kd9l7fmgu6ftm6v5r00ii7ihco%40group.calendar.google.com&amp;color=%236B3304&amp;&#10;src=54evsbvsiaaaba93asoce9gmho%40group.calendar.google.com&amp;&#10;color=%232952A3&amp;&#10;src=46iel0bugr4c0hm5uvu5enh42s%40group.calendar.google.com&amp;&#10;color=%23BE6D00&amp;&#10;src=palychoirs%40gmail.com&amp;&#10;color=%23182C57&amp;&#10;src=hnpgt1opcl0q1gm91qqnpmhecvj1mpp1%40import.calendar.google.com&amp;color=%23711616&amp;&#10;ctz=America%2FLos_Angeles" style="border-width: 0; height: 300"></iframe>
-<!-- <iframe src="https://feed.mikle.com/widget/v2/86108/" width="100%" class="fw-iframe" scrolling="no" frameborder="0"></iframe> -->
+		<!-- <iframe frameborder="0" height="300" scrolling="no" src="https://www.google.com/calendar/embed?&#10;title=Paly%20Calendar&amp;&#10;mode=AGENDA&amp;&#10;showNav=0&amp;showTitle=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;&#10;height=400&amp;&#10;wkst=1&amp;&#10;bgcolor=%23FFFFFF&amp;&#10;src=rl5e5us91t88ihuhms6d1jkn44%40group.calendar.google.com&amp;&#10;color=%23856508&amp;&#10;src=btia3tuqhgiq8vuun1p377t2gg%40group.calendar.google.com&amp;color=%23AB8B00&amp;&#10;src=lg4nnf5a82c5ipsuhak50okcqc%40group.calendar.google.com&amp;&#10;color=%23B1365F&amp;&#10;src=tq0jq89u6d2dvirb8esem8fjt4%40group.calendar.google.com&amp;&#10;color=%23711616&amp;&#10;src=tc8fl1stcbrqdt9s3aa0k9h7ak%40group.calendar.google.com&amp;&#10;color=%235C1158&amp;&#10;src=palycalendar%40gmail.com&amp;&#10;color=%23125A12&amp;&#10;src=ipcq1o1l27kq5f20pbh83it5qc%40group.calendar.google.com&amp;&#10;color=%235A6986&amp;&#10;src=kd9l7fmgu6ftm6v5r00ii7ihco%40group.calendar.google.com&amp;color=%236B3304&amp;&#10;src=54evsbvsiaaaba93asoce9gmho%40group.calendar.google.com&amp;&#10;color=%232952A3&amp;&#10;src=46iel0bugr4c0hm5uvu5enh42s%40group.calendar.google.com&amp;&#10;color=%23BE6D00&amp;&#10;src=palychoirs%40gmail.com&amp;&#10;color=%23182C57&amp;&#10;src=hnpgt1opcl0q1gm91qqnpmhecvj1mpp1%40import.calendar.google.com&amp;color=%23711616&amp;&#10;ctz=America%2FLos_Angeles" style="border-width: 0; height: 300"></iframe> -->
+<iframe src="https://feed.mikle.com/widget/v2/86108/" width="100%" height="402px" class="fw-iframe iframe-sm" scrolling="no" frameborder="0"></iframe>
 
-
+<iframe src="https://feed.mikle.com/widget/v2/86124/" height="842px" width="100%" class="fw-iframe iframe-md" scrolling="no" frameborder="0"></iframe>
 	</div>
 	<div class="col-lg">
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col-md-6 ">
 	<a href="https://id.pausd.org/">
 	<div class="card">
 		
@@ -154,7 +175,7 @@ iframe {
 	</div>
 	</a>
 </div>
-			<div class="col-md-6">
+			<div class="col-md-6 ">
 	<a href="https://connection.naviance.com/family-connection/auth/login/?hsid=pahs">
 	<div class="card">
 		
@@ -167,7 +188,7 @@ iframe {
 	</div>
 	</a>
 </div>
-			<div class="col-md-6">
+			<div class="col-md-6 ">
 	<a href="/campus-map">
 	<div class="card">
 		
@@ -180,7 +201,7 @@ iframe {
 	</div>
 	</a>
 </div>
-			<div class="col-md-6">
+			<div class="col-md-6 ">
 	<a href="/bell-schedule">
 	<div class="card">
 		
@@ -193,7 +214,7 @@ iframe {
 	</div>
 	</a>
 </div>
-			<div class="col-md-6">
+			<div class="col-md-6 ">
 	<a href="/community-service">
 	<div class="card">
 		
@@ -206,7 +227,7 @@ iframe {
 	</div>
 	</a>
 </div>
-			<div class="col-md-6">
+			<div class="col-md-6 ">
 	<a href="/attendance-policy">
 	<div class="card">
 		
@@ -219,7 +240,7 @@ iframe {
 	</div>
 	</a>
 </div>
-			<div class="col-md-6">
+			<div class="col-md-6 ">
 	<a href="/work-permit">
 	<div class="card">
 		
@@ -232,7 +253,7 @@ iframe {
 	</div>
 	</a>
 </div>
-			<div class="col-md-6">
+			<div class="col-md-6 ">
 	<a href="https://paly.net/sites/default/files/PalyCourseCatalog1819_Feb20.pdf">
 	<div class="card">
 		
@@ -245,7 +266,33 @@ iframe {
 	</div>
 	</a>
 </div>
-			<div class="col-md-6">
+			<div class="col-md-6 ">
+	<a href="/calendar">
+	<div class="card">
+		
+			<!-- <img src="" alt="Month Calendar"> -->
+			<div class="card-body">
+				<h5 class="card-title">Month Calendar</h5>
+				<p class="card-text">Extended PALY calendar, by month.</p>
+			</div>
+		
+	</div>
+	</a>
+</div>
+			<div class="col-md-6 ">
+	<a href="https://www.pausd.org/teaching-learning/school-year-calendars">
+	<div class="card">
+		
+			<!-- <img src="" alt="PAUSD Calendar"> -->
+			<div class="card-body">
+				<h5 class="card-title">PAUSD Calendar</h5>
+				<p class="card-text">Full school year calendar, district-wide.</p>
+			</div>
+		
+	</div>
+	</a>
+</div>
+			<div class="col-md-6 ">
 	<a href="/nytimes">
 	<div class="card">
 		
@@ -258,7 +305,7 @@ iframe {
 	</div>
 	</a>
 </div>
-			<div class="col-md-6">
+			<div class="col-md-6 ">
 	<a href="/about">
 	<div class="card">
 		

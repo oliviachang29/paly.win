@@ -30,7 +30,7 @@
 	<meta name="msapplication-config" content="/assets/images/favicon/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
 
-	<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="/assets/css/bootstrap.min.css"> -->
 	<style>
 	.nav {
   background-color: green;
@@ -49,9 +49,6 @@
 }
 
 #logo {
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 2px;
 }
 
 #desc {
@@ -68,26 +65,50 @@
 
 .col-lg {
   display: flex;
-  align-items: center;
   justify-content: center;
+}
+
+.col-lg .col-md-6 {
+  padding-left: 0;
 }
 
 .cal-container {
   width: 100%;
   overflow-x: hidden;
+  overflow-y: hidden;
+  @media only screen and (max-width: 960px) {
+    height: 402px;
+  }
+  margin-bottom: 15px;
 }
 
-iframe {
+.fw-iframe {
   border-width: 0;
-  margin: 0;
-  height: 400px;
-  width: 100%;
-  font-size: 100px;
+  margin: 0 auto;
 }
+
+@media only screen and (max-width: 960px) {
+  .fw-iframe {
+    height: 402px;
+  }
+  .iframe-sm {
+    display: block;
+  }
+  .iframe-md {
+    display: none;
+  }
+}
+
 @media only screen and (min-width: 960px) {
-  iframe {
-    margin-left: 0%;
-    height: 100%;
+  .fw-iframe {
+    height: 850px;
+  }
+  .iframe-sm {
+    display: none;
+  }
+  .iframe-md {
+    display: block;
+    margin-top: 15px;
   }
 }
 
@@ -136,6 +157,16 @@ iframe {
 <div class="iframe-container">
 	<iframe src=https://paly.net/sites/default/files/DailyBellSched17-18.pdf id="IFR" style="background-color: #fff;"></iframe>
 </div>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- paly.win -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6379400738810441"
+     data-ad-slot="9519799396"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 					</div>
 				</div>
 			</div>
