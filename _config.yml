@@ -1,8 +1,8 @@
-title: 
+title: paly.win
 description: >
-
+  A Palo Alto High site that's mobile friendly, slimmed down, and with a better design.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://paly.win" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
