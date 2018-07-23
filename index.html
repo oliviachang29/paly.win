@@ -4,7 +4,9 @@ layout: default
 <div class="row">
 	<div class="col-lg cal-container">
 		{% include calendar.html %}
-		<a href="/calendar"><p>See extended calendar -></p></a>
+		<a href="/calendar">
+			<button type="button" id="calendar-btn" class="btn btn-outline-success">See extended calendar</button>
+		</a>
 	</div>
 	<div class="col-lg">
 		<div class="row">
@@ -16,7 +18,7 @@ layout: default
 
 			{% include card.html title="Bell Schedule" text="Which class is when." link="/bell-schedule"%}
 
-			{% include card.html title="Month Calendar" text="Extended PALY calendar, by month."  link="/calendar"%}
+			{% include card.html title="Extended Calendar" text="PALY calendar, by month."  link="/calendar"%}
 
 			{% include card.html title="PAUSD Calendar" text="Full school year calendar, district-wide." link="/pausd-calendar"%}
 
@@ -29,8 +31,6 @@ layout: default
 			{% include card.html title="Course Catalog" text="List of classes for 2018-2019 school year." link="/course-catalog"%}
 
 			{% include card.html title="NYTimes Academic Pass" text="Get the New York Times for free." link="/nytimes"%}
-
-			{% include card.html title="About" text="Frequently asked questions." link="/about"%}
 
 		</div>
 	</div>

@@ -93,8 +93,19 @@
 }
 
 .cal-container a {
-  width: 100%;
   padding: 20px 0 0;
+  margin: 0 auto;
+}
+
+#calendar-btn {
+	color: green;
+	border: .5px solid green;
+	padding: 15px;
+}
+
+#calendar-btn:hover {
+	background-color: green;
+	color: white;
 }
 
 .fw-iframe {
@@ -157,18 +168,22 @@
 }
 	</style>
 </head>
-	<ul class="nav">
-  <div class="container">
-    <li class="nav-item"><a href="/" id="logo"><h5>paly.win</h5></a></li>
-  </div>
-</ul>
+	<nav class="nav">
+    <a class="navbar-brand abs" href="/" id="logo">paly.win</a>
+     <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+        </li>
+    </ul>
+</nav>
 	<body>
 		
 		<div id="wrap">
 			<div id="main" class="container">
 				<div id="barba-wrapper">
 					<div class="barba-container">
-						<h1>Community Service</h1>
+						<a href="/">< Back to home</a>
+<h1>Community Service</h1>
 <h3>How do I log community service?</h3>
 <p>
 	Paly uses HelperHelper <a href="https://app.helperhelper.com">HelperHelper.com</a> to log hours of community service. You can download the app or use the website.
@@ -225,7 +240,7 @@ Although there are multiple levels of this national award, Paly will only award 
 				<p><a href="tel:6503293701">(650) 329-3701</a><br>
 			</div>
 			<div class="col">
-				<a href="mailto:hello@paly.win"><p>hello@paly.win</p></a>
+				<a href="/about"><p>About</p></a>
 				<div id="footer-copyright">
 					<p>&#xa9; <script>document.write(new Date().getFullYear())</script><a href="https://oliviachang.me" target="_blank"> Olivia Chang.</a> All rights reserved.</p>
 				</div>

@@ -93,8 +93,19 @@
 }
 
 .cal-container a {
-  width: 100%;
   padding: 20px 0 0;
+  margin: 0 auto;
+}
+
+#calendar-btn {
+	color: green;
+	border: .5px solid green;
+	padding: 15px;
+}
+
+#calendar-btn:hover {
+	background-color: green;
+	color: white;
 }
 
 .fw-iframe {
@@ -157,11 +168,14 @@
 }
 	</style>
 </head>
-	<ul class="nav">
-  <div class="container">
-    <li class="nav-item"><a href="/" id="logo"><h5>paly.win</h5></a></li>
-  </div>
-</ul>
+	<nav class="nav">
+    <a class="navbar-brand abs" href="/" id="logo">paly.win</a>
+     <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+        </li>
+    </ul>
+</nav>
 	<body>
 		
 		<div id="wrap">
@@ -173,7 +187,9 @@
 		<iframe src="https://feed.mikle.com/widget/v2/86108/" width="100%" class="fw-iframe iframe-sm" scrolling="no" frameborder="0"></iframe>
 
 <iframe src="https://feed.mikle.com/widget/v2/86152/" height="842px" width="100%" class="fw-iframe iframe-md" scrolling="no" frameborder="0"></iframe>
-		<a href="/calendar"><p>See extended calendar -></p></a>
+		<a href="/calendar">
+			<button type="button" id="calendar-btn" class="btn btn-outline-success">See extended calendar</button>
+		</a>
 	</div>
 	<div class="col-lg">
 		<div class="row">
@@ -237,10 +253,10 @@
 	<a href="/calendar">
 	<div class="card">
 		
-			<!-- <img src="" alt="Month Calendar"> -->
+			<!-- <img src="" alt="Extended Calendar"> -->
 			<div class="card-body">
-				<h5 class="card-title">Month Calendar</h5>
-				<p class="card-text">Extended PALY calendar, by month.</p>
+				<h5 class="card-title">Extended Calendar</h5>
+				<p class="card-text">PALY calendar, by month.</p>
 			</div>
 		
 	</div>
@@ -331,20 +347,6 @@
 	</a>
 </div>
 
-			<div class="col-md-6 ">
-	<a href="/about">
-	<div class="card">
-		
-			<!-- <img src="" alt="About"> -->
-			<div class="card-body">
-				<h5 class="card-title">About</h5>
-				<p class="card-text">Frequently asked questions.</p>
-			</div>
-		
-	</div>
-	</a>
-</div>
-
 		</div>
 	</div>
 </div>
@@ -367,7 +369,7 @@
 				<p><a href="tel:6503293701">(650) 329-3701</a><br>
 			</div>
 			<div class="col">
-				<a href="mailto:hello@paly.win"><p>hello@paly.win</p></a>
+				<a href="/about"><p>About</p></a>
 				<div id="footer-copyright">
 					<p>&#xa9; <script>document.write(new Date().getFullYear())</script><a href="https://oliviachang.me" target="_blank"> Olivia Chang.</a> All rights reserved.</p>
 				</div>
