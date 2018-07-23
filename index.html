@@ -4,21 +4,34 @@ layout: default
 <div class="row">
 	<div class="col-lg cal-container">
 		{% include calendar.html %}
+		<a href="/calendar"><p>See extended calendar -></p></a>
 	</div>
 	<div class="col-lg">
 		<div class="row">
-			{% include card.html title="ID Portal" text="Schoology, Infinite Campus, Google Drive, NoodleTools."  link="https://id.pausd.org/" image_url="/assets/images/idportal.jpg"%}
-			{% include card.html title="Naviance" text="GPA, college resources, SAT/ACT test scores." link="https://connection.naviance.com/family-connection/auth/login/?hsid=pahs" image_url="/assets/images/naviance.png"%}
-			{% include card.html title="Campus Map" text="How to get around." link="/campus-map" image_url="/assets/images/campus-map.jpg"%}
-			{% include card.html title="Bell Schedule" text="Which class is when." link="/bell-schedule" image_url="/assets/images/bell-schedule.jpg"%}
-			{% include card.html title="Community Service Information" text="How to get the President's Award." link="/community-service" image_url="/assets/images/community-service.jpg"%}
-			{% include card.html title="Attendance Policy" text="What to do when you miss class." link="/attendance-policy" image_url="/assets/images/attendance-policy.jpg"%}
-			{% include card.html title="Work Permit" text="How and where to apply for one." link="/work-permit" image_url="/assets/images/work-permit.jpg"%}
-			{% include card.html title="Course Catalog" text="List of classes for 2018-2019 school year." link="https://paly.net/sites/default/files/PalyCourseCatalog1819_Feb20.pdf" image_url="/assets/images/course-catalog.jpg"%}
+			{% include card.html title="ID Portal" text="Schoology, Infinite Campus, Google Drive, NoodleTools."  link="https://id.pausd.org/"%}
+
+			{% include card.html title="Naviance" text="GPA, college resources, SAT/ACT test scores." link="https://connection.naviance.com/family-connection/auth/login/?hsid=pahs"%}
+
+			{% include card.html title="Campus Map" text="How to get around." link="/campus-map"%}
+
+			{% include card.html title="Bell Schedule" text="Which class is when." link="/bell-schedule"%}
+
 			{% include card.html title="Month Calendar" text="Extended PALY calendar, by month."  link="/calendar"%}
-			{% include card.html title="PAUSD Calendar" text="Full school year calendar, district-wide." link="https://www.pausd.org/teaching-learning/school-year-calendars"%}
-			{% include card.html title="NYTimes Academic Pass" text="Get the New York Times for free." link="/nytimes" image_url="/assets/images/nytimes.jpg"%}
-			{% include card.html title="About" text="About this site." link="/about"%}
+
+			{% include card.html title="PAUSD Calendar" text="Full school year calendar, district-wide." link="/pausd-calendar"%}
+
+			{% include card.html title="Community Service Information" text="How to get the President's Award." link="/community-service"%}
+
+			{% include card.html title="Attendance Policy" text="What to do when you miss class." link="/attendance-policy"%}
+
+			{% include card.html title="Work Permit" text="How and where to apply for one." link="/work-permit"%}
+
+			{% include card.html title="Course Catalog" text="List of classes for 2018-2019 school year." link="/course-catalog"%}
+
+			{% include card.html title="NYTimes Academic Pass" text="Get the New York Times for free." link="/nytimes"%}
+
+			{% include card.html title="About" text="Frequently asked questions." link="/about"%}
+
 		</div>
 	</div>
 </div>
