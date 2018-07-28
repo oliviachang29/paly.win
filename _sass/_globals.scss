@@ -34,3 +34,18 @@ footer {
 	border: none;
 	background-color: #fff;
 }
+
+.button {
+	color: green;
+	border: .5px solid green;
+	padding: 15px;
+	&:hover {
+		background-color: green;
+		border: .5px solid green;
+		color: white;
+	}
+}
+
+.attendance-policy-btn {
+	margin-bottom: 30px;
+}
