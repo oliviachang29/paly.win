@@ -60,7 +60,7 @@ html, body {
   flex-direction: column;
   margin-bottom: 15px;
   @media only screen and (max-width: 960px) {
-    height: 402px;
+    height: 510px;
   }
   @media only screen and (min-width: 960px) {
     height: 100%;
@@ -84,7 +84,7 @@ html, body {
 
 @media only screen and (max-width: 960px) {
   .fw-iframe {
-    height: 402px;
+    height: 510px;
   }
   .iframe-sm {
     display: block !important;
