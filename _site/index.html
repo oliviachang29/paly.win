@@ -30,7 +30,6 @@
 	<meta name="msapplication-config" content="/assets/images/favicon/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
 
-	<!-- <link rel="stylesheet" href="/assets/css/bootstrap.min.css"> -->
 	<style>
 	/*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
@@ -41,10 +40,14 @@
 /*# sourceMappingURL=bootstrap.min.css.map */
 
 html, body {
-	height: 100%;
+  height: 100%;
   width: 100%;
   padding: 0;
   margin: 0;
+}
+
+* {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 #wrap {
@@ -168,6 +171,15 @@ html, body {
 .date-label {
   font-size: 100px !important;
 }
+
+.highlighted-card {
+	border-color: green;
+	border-width: 3px;
+}
+
+.highlighted-card h5 {
+	color: green;
+}
 	</style>
 </head>
 	<body>
@@ -194,133 +206,124 @@ html, body {
     </div>
     <div class="col-lg">
         <div class="row">
-            <div class="col-md-6 ">
+            <div class="col-md-6">
+	<a href="https://studyguides.science">
+	<div class="card highlighted-card">
+			<!-- <img src="" alt="studyguides.science"> -->
+			<div class="card-body">
+				<h5 class="card-title">studyguides.science</h5>
+				<p class="card-text">Science study notes for biology and chemistry.</p>
+			</div>
+	</div>
+	</a>
+</div>
+            <div class="col-md-6">
 	<a href="https://id.pausd.org/">
-	<div class="card">
-		
+	<div class="card ">
 			<!-- <img src="" alt="ID Portal"> -->
 			<div class="card-body">
 				<h5 class="card-title">ID Portal</h5>
 				<p class="card-text">Schoology, Infinite Campus, Google Drive, NoodleTools.</p>
 			</div>
-		
 	</div>
 	</a>
 </div>
-            <div class="col-md-6 ">
+            <div class="col-md-6">
 	<a href="/bell-schedule">
-	<div class="card">
-		
+	<div class="card ">
 			<!-- <img src="" alt="Bell Schedule"> -->
 			<div class="card-body">
 				<h5 class="card-title">Bell Schedule</h5>
 				<p class="card-text">Which class is when.</p>
 			</div>
-		
 	</div>
 	</a>
 </div>
-            <div class="col-md-6 ">
+            <div class="col-md-6">
 	<a href="/campus-map">
-	<div class="card">
-		
+	<div class="card ">
 			<!-- <img src="" alt="Campus Map"> -->
 			<div class="card-body">
 				<h5 class="card-title">Campus Map</h5>
 				<p class="card-text">How to get around.</p>
 			</div>
-		
 	</div>
 	</a>
 </div>
-            <div class="col-md-6 ">
+            <div class="col-md-6">
 	<a href="/pausd-calendar">
-	<div class="card">
-		
+	<div class="card ">
 			<!-- <img src="" alt="PAUSD Calendar"> -->
 			<div class="card-body">
 				<h5 class="card-title">PAUSD Calendar</h5>
 				<p class="card-text">Full school year calendar, district-wide.</p>
 			</div>
-		
 	</div>
 	</a>
 </div>
-            <div class="col-md-6 ">
+            <div class="col-md-6">
 	<a href="https://connection.naviance.com/family-connection/auth/login/?hsid=pahs">
-	<div class="card">
-		
+	<div class="card ">
 			<!-- <img src="" alt="Naviance"> -->
 			<div class="card-body">
 				<h5 class="card-title">Naviance</h5>
 				<p class="card-text">GPA, college resources, SAT/ACT test scores.</p>
 			</div>
-		
 	</div>
 	</a>
 </div>
-            <div class="col-md-6 ">
+            <div class="col-md-6">
 	<a href="/community-service">
-	<div class="card">
-		
+	<div class="card ">
 			<!-- <img src="" alt="Community Service Information"> -->
 			<div class="card-body">
 				<h5 class="card-title">Community Service Information</h5>
 				<p class="card-text">How to get the President's Award.</p>
 			</div>
-		
 	</div>
 	</a>
 </div>
-            <div class="col-md-6 ">
+            <div class="col-md-6">
 	<a href="/attendance-policy">
-	<div class="card">
-		
+	<div class="card ">
 			<!-- <img src="" alt="Attendance Policy"> -->
 			<div class="card-body">
 				<h5 class="card-title">Attendance Policy</h5>
 				<p class="card-text">What to do when you miss class.</p>
 			</div>
-		
 	</div>
 	</a>
 </div>
-            <div class="col-md-6 ">
+            <div class="col-md-6">
 	<a href="/work-permit">
-	<div class="card">
-		
+	<div class="card ">
 			<!-- <img src="" alt="Work Permit"> -->
 			<div class="card-body">
 				<h5 class="card-title">Work Permit</h5>
 				<p class="card-text">How and where to apply for one.</p>
 			</div>
-		
 	</div>
 	</a>
 </div>
-            <div class="col-md-6 ">
+            <div class="col-md-6">
 	<a href="/course-catalog">
-	<div class="card">
-		
+	<div class="card ">
 			<!-- <img src="" alt="Course Catalog"> -->
 			<div class="card-body">
 				<h5 class="card-title">Course Catalog</h5>
 				<p class="card-text">List of classes for 2018-2019 school year.</p>
 			</div>
-		
 	</div>
 	</a>
 </div>
-            <div class="col-md-6 ">
+            <div class="col-md-6">
 	<a href="/nytimes">
-	<div class="card">
-		
+	<div class="card ">
 			<!-- <img src="" alt="NYTimes Academic Pass"> -->
 			<div class="card-body">
 				<h5 class="card-title">NYTimes Academic Pass</h5>
 				<p class="card-text">Get the New York Times for free.</p>
 			</div>
-		
 	</div>
 	</a>
 </div>

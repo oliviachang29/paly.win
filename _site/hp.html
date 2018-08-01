@@ -30,7 +30,6 @@
 	<meta name="msapplication-config" content="/assets/images/favicon/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
 
-	<!-- <link rel="stylesheet" href="/assets/css/bootstrap.min.css"> -->
 	<style>
 	/*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
@@ -41,10 +40,14 @@
 /*# sourceMappingURL=bootstrap.min.css.map */
 
 html, body {
-	height: 100%;
+  height: 100%;
   width: 100%;
   padding: 0;
   margin: 0;
+}
+
+* {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 #wrap {
@@ -167,6 +170,15 @@ html, body {
 
 .date-label {
   font-size: 100px !important;
+}
+
+.highlighted-card {
+	border-color: green;
+	border-width: 3px;
+}
+
+.highlighted-card h5 {
+	color: green;
 }
 	</style>
 </head>

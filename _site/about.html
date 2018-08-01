@@ -30,7 +30,6 @@
 	<meta name="msapplication-config" content="/assets/images/favicon/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
 
-	<!-- <link rel="stylesheet" href="/assets/css/bootstrap.min.css"> -->
 	<style>
 	/*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
@@ -41,10 +40,14 @@
 /*# sourceMappingURL=bootstrap.min.css.map */
 
 html, body {
-	height: 100%;
+  height: 100%;
   width: 100%;
   padding: 0;
   margin: 0;
+}
+
+* {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 #wrap {
@@ -168,6 +171,15 @@ html, body {
 .date-label {
   font-size: 100px !important;
 }
+
+.highlighted-card {
+	border-color: green;
+	border-width: 3px;
+}
+
+.highlighted-card h5 {
+	color: green;
+}
 	</style>
 </head>
 	<body>
@@ -191,7 +203,7 @@ html, body {
 </nav>
 <h1>About</h1>
 <h3>What is paly.win?</h3>
-<p>This is a strealined version of the bloated <a href="https://paly.net">Paly website</a>. It loads <i>much</i> faster and only includes links which are used on a daily basis.</p>
+<p>This is a streamlined version of the bloated <a href="https://paly.net">Paly website</a>. It loads <i>much</i> faster and only includes links which are used on a daily basis.</p>
 
 <h3>Why is paly.win necessary?</h3>
 <p>paly.net is (1) slow to load, (2) not mobile-friendly, and (3) difficult to navigate. paly.win fixes all of these problems. It's not intended to be a replacement for paly.net, but simply the site that you use regularly.</p>
@@ -199,17 +211,17 @@ html, body {
 <h3>Why the name paly.win?</h3>
 <p>It's short, easy to remember, and hopefully evokes positive emotions.</p>
 
-<h3>Why the lack of custom fonts?</h3>
-<p>Sadly, custom fonts slow down sites considerably. In the effort to make paly.win as fast as possible, I decided against custom fonts and instead employed system fonts (my deepest apologies if you continue to use Internet Explorer).</p>
+<h3>Why do you use system fonts? Why not custom fonts?</h3>
+<p>Sadly, custom fonts slow down sites considerably. In the effort to make paly.win as fast as possible, I decided against custom fonts and instead employed system fonts (my deepest apologies if you continue to use Internet Explorer). Fun fact - thanks to CSSTricks, this site utilizes the same font stack as Github.</p>
 
 <h3>Why is there no loading animation between pages?</h3>
-<p>paly.win makes use of <a href="http://barbajs.org/">barba.js</a>, a lightweight JS library for making transitions between pages faster and smoother. This makes paly.win as fast as possible.</p>
+<p>paly.win makes use of <a href="http://barbajs.org/">barba.js</a>, a lightweight JS library for making transitions between pages faster and smoother.</p>
 
 <h3>I'm good at coding. Can I contribute?</h3>
 <p>Sure. <a href="https://github.com/oliviachang29/paly.win" target="_blank">I await your pull request.</a></p>
 
 <h3>Who made this site?</h3>
-<p>paly.win was made by <a href="https://oliviachang.me" target="_blank">Olivia Chang</a>. Contact me at <a href="mailto:hello@paly.win">hello@paly.win</a>.</p>
+<p>paly.win was made by <a href="https://oliviachang.me" target="_blank">Olivia Chang (class of 2020)</a>. Contact me at <a href="mailto:hello@paly.win">hello@paly.win</a>.</p>
 <!-- <div class="row">
 	<div class="col-md-10">
 		
