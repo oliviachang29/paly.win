@@ -1,0 +1,69 @@
+--- 
+layout: no-title
+title: "Search"
+---
+
+<!-- <div id="search-box"></div> -->
+<input class="form-control" id="search-box" type="text" placeholder="Search" aria-label="Search">
+<div id="hits">
+    <!-- Hits widget will appear here -->
+</div>
+<!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.9.0/dist/instantsearch-theme-algolia.min.css"> -->
+<!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.9.0/dist/instantsearch.min.css"> -->
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.9.0"></script>
+<script>
+	const search = instantsearch({
+	  appId: '{{ site.algolia.application_id }}',
+	  indexName: '{{ site.algolia.index_name }}',
+	  apiKey: '{{ site.algolia.search_only_api_key }}',
+	  routing: true
+	});
+	search.addWidget(
+	    instantsearch.widgets.searchBox({
+	        container: '#search-box',
+	        placeholder: 'Search',
+	        magnifier: false,
+	        reset: false,
+	        poweredBy: false // This is required if you're on the free Community plan
+	    })
+	);
+
+	search.addWidget(
+	    instantsearch.widgets.hits({
+	        container: '#hits',
+	        templates: {
+		        empty: 'No results found.',
+		        item: function(hit) {
+			        return `
+			          <div class="post-item">
+			            <h2><a class="post-link" href="{{ site.baseurl }}${hit.url}">${hit._highlightResult.title.value}</a></h2>
+			            	<div class="post-snippet">${hit.html}</div>
+			          </div>
+			        `;
+			      }
+		      }
+	    })
+	);
+
+	search.start();
+</script>
+
+<style>
+.ais-search-box {
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+.post-item {
+  margin-bottom: 30px;
+}
+.post-link .ais-Highlight {
+  color: #111;
+  font-style: normal;
+  text-decoration: underline;
+}
+.post-snippet .ais-Highlight {
+  color: #2a7ae2;
+  font-style: normal;
+  font-weight: bold;
+}
+</style>

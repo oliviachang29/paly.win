@@ -16,3 +16,9 @@ plugins_dir:
   - jekyll-minifier
 sass:
   style: compressed
+algolia:
+  application_id: O3D9OIP9FH
+  search_only_api_key: d15952a25b7c2635422e34d2e116e9ce
+  index_name: paly.win
+  nodes_to_index: 'p,h2,h3,h4,li,h5'
+  files_to_exclude: ['search.html']

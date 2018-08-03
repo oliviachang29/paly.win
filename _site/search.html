@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>
-	 PAUSD Calendar | paly.win
+	 Search | paly.win
 	
 	</title>
 	<meta name="description" content="A Palo Alto High School site that's mobile friendly, slimmed down, and with a better design.
@@ -196,32 +196,69 @@ html, body {
 	<div id="main" class="container">
 		<div id="barba-wrapper">
 			<div class="barba-container">
-				<!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-style="display:block"
-data-ad-client="ca-pub-6379400738810441"
-data-ad-slot="9519799396"
-data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script> -->
-<nav aria-label="breadcrumb">
-	<ol class="breadcrumb">
-		<li class="breadcrumb-item"><a href="/">Home</a></li>
-		
-		<li class="breadcrumb-item active" aria-current="page">PAUSD Calendar</li>
-	</ol>
-</nav>
-<h1>PAUSD Calendar</h1>
-<a href="https://www.pausd.org/sites/default/files/pdf-faqs/attachments/SchoolYearCalendar2019.pdf">Original link</a>
-<div class="iframe-container">
-	<iframe src=https://www.pausd.org/sites/default/files/pdf-faqs/attachments/SchoolYearCalendar2019.pdf id="IFR" style="background-color: #fff;"></iframe>
+				<!-- <div id="search-box"></div> -->
+<input class="form-control" id="search-box" type="text" placeholder="Search" aria-label="Search">
+<div id="hits">
+    <!-- Hits widget will appear here -->
 </div>
+<!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.9.0/dist/instantsearch-theme-algolia.min.css"> -->
+<!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.9.0/dist/instantsearch.min.css"> -->
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.9.0"></script>
+<script>
+	const search = instantsearch({
+	  appId: 'O3D9OIP9FH',
+	  indexName: 'paly.win',
+	  apiKey: 'd15952a25b7c2635422e34d2e116e9ce',
+	  routing: true
+	});
+	search.addWidget(
+	    instantsearch.widgets.searchBox({
+	        container: '#search-box',
+	        placeholder: 'Search',
+	        magnifier: false,
+	        reset: false,
+	        poweredBy: false // This is required if you're on the free Community plan
+	    })
+	);
+
+	search.addWidget(
+	    instantsearch.widgets.hits({
+	        container: '#hits',
+	        templates: {
+		        empty: 'No results found.',
+		        item: function(hit) {
+			        return `
+			          <div class="post-item">
+			            <h2><a class="post-link" href="${hit.url}">${hit._highlightResult.title.value}</a></h2>
+			            	<div class="post-snippet">${hit.html}</div>
+			          </div>
+			        `;
+			      }
+		      }
+	    })
+	);
+
+	search.start();
+</script>
 
 <style>
-	footer {
-		display: none;
-	}
+.ais-search-box {
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+.post-item {
+  margin-bottom: 30px;
+}
+.post-link .ais-Highlight {
+  color: #111;
+  font-style: normal;
+  text-decoration: underline;
+}
+.post-snippet .ais-Highlight {
+  color: #2a7ae2;
+  font-style: normal;
+  font-weight: bold;
+}
 </style>
 			</div>
 		</div>
