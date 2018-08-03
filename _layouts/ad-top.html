@@ -1,27 +1,25 @@
 ---
 layout: nav
 ---
+<!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-6379400738810441"
+data-ad-slot="9519799396"
+data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script> -->
 <nav aria-label="breadcrumb">
 	<ol class="breadcrumb">
 		<li class="breadcrumb-item"><a href="/">Home</a></li>
+		{% if page.parents %}
+			{% for parent in page.parents %}
+				<li class="breadcrumb-item"><a href="{{parent[0]}}">{{parent[1]}}</a></li>
+			{% endfor %}
+		{% endif %}
 		<li class="breadcrumb-item active" aria-current="page">{{page.title}}</li>
 	</ol>
 </nav>
 <h1>{{page.title}}</h1>
 {{content}}
-<!-- <div class="row">
-	<div class="col-md-10">
-		
-	</div>
-	<div class="col-md-2">
-		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<ins class="adsbygoogle"
-		style="display:block"
-		data-ad-client="ca-pub-6379400738810441"
-		data-ad-slot="9519799396"
-		data-ad-format="auto"></ins>
-		<script>
-		(adsbygoogle = window.adsbygoogle || []).push({});
-		</script>
-	</div>
-</div> -->

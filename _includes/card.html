@@ -1,5 +1,9 @@
 <div class="col-md-6">
-	<a href="{{include.link}}">
+	<a href="{{include.link}}" 
+	{% if include.newtab %}
+		target="_blank"
+	{% endif %}
+	>
 	<div class="card {{include.class}}">
 			<!-- <img src="{{include.image_url}}" alt="{{include.title}}"> -->
 			<div class="card-body">
