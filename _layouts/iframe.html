@@ -1,7 +1,11 @@
 ---
 layout: ad-top
 ---
-<a href="{{ page.link }}">Original link</a>
+
+{{content}}
+{% if page.original_link != "false" %}
+	<a href="{{ page.link }}">Original link</a>
+{% endif %}
 <div class="iframe-container">
 	<iframe src={{ page.link }} id="IFR" style="background-color: #fff;"></iframe>
 </div>

@@ -2,8 +2,9 @@
 layout: no-title
 title: "Search"
 ---
-
-<!-- <div id="search-box"></div> -->
+<div id="algolia-logo">
+	<span>Search by <a href="https://algolia.com" target="_blank"><img src="/assets/images/algolia.png" height="15px"></a></span>
+</div>
 <input class="form-control" id="search-box" type="text" placeholder="Search" aria-label="Search">
 <div id="hits">
     <!-- Hits widget will appear here -->
@@ -47,23 +48,3 @@ title: "Search"
 
 	search.start();
 </script>
-
-<style>
-.ais-search-box {
-  max-width: 100%;
-  margin-bottom: 15px;
-}
-.post-item {
-  margin-bottom: 30px;
-}
-.post-link .ais-Highlight {
-  color: #111;
-  font-style: normal;
-  text-decoration: underline;
-}
-.post-snippet .ais-Highlight {
-  color: #2a7ae2;
-  font-style: normal;
-  font-weight: bold;
-}
-</style>

@@ -51,7 +51,6 @@ html, body {
 }
 
 #wrap {
-	margin-top: 60px;
   min-height: 60%;
   padding: 2em 0;
 }
@@ -184,12 +183,22 @@ html, body {
 	</style>
 </head>
 	<body>
-		<nav class="nav fixed-top">
+		<script>
+function search() {
+	alert(document.getElementById("nav-search-bar").value)
+	window.location.href = "http://stackoverflow.com";
+	return false;
+	// window.location = "https://paly.win/search?query=" + document.getElementById("nav-search-bar").value;
+}
+</script>
+<nav class="nav">
     <a class="navbar-brand abs" href="/" id="logo">paly.win</a>
      <ul class="navbar-nav ml-auto">
-     	<li class="nav-item">
-     		<a class="nav-link" href="/search">Search</a>
-     	</li>
+     	<!-- <li class="nav-item">
+     		<form onsubmit="search()">
+     			<input id="nav-search-bar" class="form-control" type="text" placeholder="Search" aria-label="Search">
+     		</form>
+     	</li> -->
     </ul>
 </nav>
 <div id="wrap">
@@ -217,16 +226,13 @@ data-ad-format="auto"></ins>
 	</ol>
 </nav>
 <h1>Campus Map</h1>
-<a href="https://paly.net/sites/default/files/Palo_Alto_High_School_campus_map_2017-11-13_2page.pdf">Original link</a>
-<div class="iframe-container">
-	<iframe src=https://paly.net/sites/default/files/Palo_Alto_High_School_campus_map_2017-11-13_2page.pdf id="IFR" style="background-color: #fff;"></iframe>
-</div>
-
-<style>
-	footer {
-		display: none;
-	}
-</style>
+<a href="/new-to-paly/campus-map-pdf">
+    <button type="button" class="btn btn-outline-success button">PDF Version</button>
+</a>
+<h2>School Map</h2>
+<img src="https://s3-us-west-1.amazonaws.com/paly.win/campus-map.png" width="100%">
+<h2>Peery Center Map</h2>
+<img src="https://s3-us-west-1.amazonaws.com/paly.win/peery-center-map.png" width="100%">
 			</div>
 		</div>
 	</div>

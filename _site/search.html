@@ -51,7 +51,6 @@ html, body {
 }
 
 #wrap {
-	margin-top: 60px;
   min-height: 60%;
   padding: 2em 0;
 }
@@ -184,19 +183,31 @@ html, body {
 	</style>
 </head>
 	<body>
-		<nav class="nav fixed-top">
+		<script>
+function search() {
+	alert(document.getElementById("nav-search-bar").value)
+	window.location.href = "http://stackoverflow.com";
+	return false;
+	// window.location = "https://paly.win/search?query=" + document.getElementById("nav-search-bar").value;
+}
+</script>
+<nav class="nav">
     <a class="navbar-brand abs" href="/" id="logo">paly.win</a>
      <ul class="navbar-nav ml-auto">
-     	<li class="nav-item">
-     		<a class="nav-link" href="/search">Search</a>
-     	</li>
+     	<!-- <li class="nav-item">
+     		<form onsubmit="search()">
+     			<input id="nav-search-bar" class="form-control" type="text" placeholder="Search" aria-label="Search">
+     		</form>
+     	</li> -->
     </ul>
 </nav>
 <div id="wrap">
 	<div id="main" class="container">
 		<div id="barba-wrapper">
 			<div class="barba-container">
-				<!-- <div id="search-box"></div> -->
+				<div id="algolia-logo">
+	<span>Search by <a href="https://algolia.com" target="_blank"><img src="/assets/images/algolia.png" height="15px"></a></span>
+</div>
 <input class="form-control" id="search-box" type="text" placeholder="Search" aria-label="Search">
 <div id="hits">
     <!-- Hits widget will appear here -->
@@ -240,26 +251,6 @@ html, body {
 
 	search.start();
 </script>
-
-<style>
-.ais-search-box {
-  max-width: 100%;
-  margin-bottom: 15px;
-}
-.post-item {
-  margin-bottom: 30px;
-}
-.post-link .ais-Highlight {
-  color: #111;
-  font-style: normal;
-  text-decoration: underline;
-}
-.post-snippet .ais-Highlight {
-  color: #2a7ae2;
-  font-style: normal;
-  font-weight: bold;
-}
-</style>
 			</div>
 		</div>
 	</div>
