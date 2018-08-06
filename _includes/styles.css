@@ -94,7 +94,7 @@ html, body {
     display: block !important;
   }
   .iframe-md {
-    display: none !important;
+    /*display: none !important;*/
   }
 }
 
@@ -103,7 +103,7 @@ html, body {
     height: 100%;
   }
   .iframe-sm {
-    display: none !important;
+    /*display: none !important;*/
   }
   .iframe-md {
     display: block !important;
