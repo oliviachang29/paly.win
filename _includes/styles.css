@@ -80,33 +80,28 @@ html, body {
   margin: 0 auto;
 }
 
-.fw-iframe {
-  border-width: 0;
-  margin: 0 auto;
-  margin-left: none;
-}
-
 @media only screen and (max-width: 960px) {
-  .fw-iframe {
-    height: 510px;
-  }
   .iframe-sm {
     display: block !important;
   }
   .iframe-md {
-    /*display: none !important;*/
+    display: none !important;
+  }
+  .iframe-cal {
+  	height: 500px;
+  	overflow-x: hidden;
   }
 }
 
 @media only screen and (min-width: 960px) {
-  .fw-iframe {
-    height: 100%;
-  }
   .iframe-sm {
-    /*display: none !important;*/
+    display: none !important;
   }
   .iframe-md {
     display: block !important;
+  }
+  .iframe-cal {
+  	height: 100%;
   }
 }
 
