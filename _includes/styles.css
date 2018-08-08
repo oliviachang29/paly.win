@@ -81,12 +81,6 @@ html, body {
 }
 
 @media only screen and (max-width: 960px) {
-  .iframe-sm {
-    display: block !important;
-  }
-  .iframe-md {
-    display: none !important;
-  }
   .iframe-cal {
   	height: 500px;
   	overflow-x: hidden;
@@ -94,12 +88,6 @@ html, body {
 }
 
 @media only screen and (min-width: 960px) {
-  .iframe-sm {
-    display: none !important;
-  }
-  .iframe-md {
-    display: block !important;
-  }
   .iframe-cal {
   	height: 100%;
   }
