@@ -55,6 +55,10 @@ html, body {
   }
 }
 
+.fc-header-toolbar {
+	display: none;
+}
+
 .cal-container {
   margin-top: 7px;
   width: 100%;

@@ -30,6 +30,8 @@
 	<meta name="msapplication-config" content="/assets/images/favicon/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
 
+	<link rel='stylesheet' href='/assets/css/fullcalendar.min.css' />
+
 	<style>
 	/*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
@@ -86,6 +88,10 @@ html, body {
   #desc {
     display: none;
   }
+}
+
+.fc-header-toolbar {
+	display: none;
 }
 
 .cal-container {
@@ -166,6 +172,7 @@ html, body {
 a {
 	color: green;
 }
+
 	</style>
 </head>
 	<body>
@@ -432,6 +439,73 @@ data-ad-format="auto"></ins>
 </div>
 <script src="/assets/js/main.js" type="text/javascript"></script>
 <link rel="stylesheet" href="/assets/css/main_css_file.css">
+<script src='/assets/js/jquery.min.js'></script>
+<script src='/assets/js/moment.min.js'></script>
+<script src='/assets/js/fullcalendar.min.js'></script>
+<script src='/assets/js/gcal.min.js'></script>
+
+
+<script type='text/javascript'>
+
+$(function() {
+  $('#calendar').fullCalendar({
+	  views: {
+	    myList: {
+	      type: 'list',
+	      // duration: { days: 30 },
+	      visibleRange: function(currentDate) {
+		    return {
+		      start: currentDate,
+		      end: currentDate.clone().add(30, 'days') // exclusive end, so 3
+		    };
+		  }
+	    }
+	  },
+	  defaultView: 'myList',
+      googleCalendarApiKey: 'AIzaSyAtvlsLDs29zQ5FXagThJitN9-_kuxigkA',
+    eventSources:
+    [
+	    {
+	      googleCalendarId: 'palycalendar@gmail.com'
+	    },
+	    {
+			googleCalendarId:'btia3tuqhgiq8vuun1p377t2gg@group.calendar.google.com' 
+		},
+		{
+			googleCalendarId:'rl5e5us91t88ihuhms6d1jkn44@group.calendar.google.com' 
+		},
+		{
+			googleCalendarId:'lg4nnf5a82c5ipsuhak50okcqc@group.calendar.google.com' 
+		},
+		{
+			googleCalendarId:'tq0jq89u6d2dvirb8esem8fjt4@group.calendar.google.com' 
+		},
+		{
+			googleCalendarId:'hnpgt1opcl0q1gm91qqnpmhecvj1mpp1@import.calendar.google.com' 
+		},
+		{
+			googleCalendarId:'tc8fl1stcbrqdt9s3aa0k9h7ak@group.calendar.google.com' 
+		},
+		{
+			googleCalendarId: 'palychoirs@gmail.com' 
+		},
+		{
+			googleCalendarId:'ipcq1o1l27kq5f20pbh83itqc@group.calendar.google.com' 
+		},
+		{
+			googleCalendarId:'kd9l7fmgu6ftm6v5r00ii7ihco@group.calendar.google.com' 
+		},
+		{
+			googleCalendarId:'54evsbvsiaaaba93asoce9gmho@group.calendar.google.com' 
+		},
+		{
+			googleCalendarId:'46iel0bugr4c0hm5uvu5enh42s@group.calendar.google.com' 
+		},
+    ]
+  });
+});
+
+</script>
 
 <footer>
 	<div class="container">
