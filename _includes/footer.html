@@ -9,58 +9,116 @@
 <script type='text/javascript'>
 
 $(function() {
-  $('#calendar').fullCalendar({
+  $('#calendar-full').fullCalendar({
+	  defaultView: 'month',
+	  height: 'auto',  
+	  eventLimit: 6,
+	  fixedWeekCount: false,
+	  header: { //TODO: Why doesn't this render?
+		  left: 'prev,next today',
+		  center: '',
+		  right: 'month,agendaWeek,agendaDay',
+	  },
+      googleCalendarApiKey: 'AIzaSyAtvlsLDs29zQ5FXagThJitN9-_kuxigkA',
+    eventSources:
+    [
+	    {
+	      googleCalendarId: 'palycalendar@gmail.com',
+	      color: 'red' // General school calendar
+	    },
+	    {
+			googleCalendarId:'btia3tuqhgiq8vuun1p377t2gg@group.calendar.google.com',
+		},
+		{
+			googleCalendarId:'rl5e5us91t88ihuhms6d1jkn44@group.calendar.google.com',
+		},
+		{
+			googleCalendarId:'lg4nnf5a82c5ipsuhak50okcqc@group.calendar.google.com',
+		},
+		{
+			googleCalendarId:'tq0jq89u6d2dvirb8esem8fjt4@group.calendar.google.com',
+			color: 'green', // Sports calendar
+		},
+		{
+			googleCalendarId:'hnpgt1opcl0q1gm91qqnpmhecvj1mpp1@import.calendar.google.com',
+		},
+		{
+			googleCalendarId:'tc8fl1stcbrqdt9s3aa0k9h7ak@group.calendar.google.com',
+		},
+		{
+			googleCalendarId: 'palychoirs@gmail.com',
+		},
+		{
+			googleCalendarId:'ipcq1o1l27kq5f20pbh83itqc@group.calendar.google.com',
+		},
+		{
+			googleCalendarId:'kd9l7fmgu6ftm6v5r00ii7ihco@group.calendar.google.com',
+		},
+		{
+			googleCalendarId:'54evsbvsiaaaba93asoce9gmho@group.calendar.google.com',
+		},
+		{
+			googleCalendarId:'46iel0bugr4c0hm5uvu5enh42s@group.calendar.google.com',
+		},
+    ]
+  });
+});
+
+$(function() {
+  $('#calendar-min').fullCalendar({
 	  views: {
 	    myList: {
 	      type: 'list',
-	      // duration: { days: 30 },
 	      visibleRange: function(currentDate) {
 		    return {
 		      start: currentDate,
 		      end: currentDate.clone().add(30, 'days') // exclusive end, so 3
-		    };
+		    };    
 		  }
 	    }
 	  },
+	  height: 'parent',
 	  defaultView: 'myList',
       googleCalendarApiKey: 'AIzaSyAtvlsLDs29zQ5FXagThJitN9-_kuxigkA',
     eventSources:
     [
 	    {
-	      googleCalendarId: 'palycalendar@gmail.com'
+	      googleCalendarId: 'palycalendar@gmail.com',
+	      color: 'red' // General school calendar
 	    },
 	    {
-			googleCalendarId:'btia3tuqhgiq8vuun1p377t2gg@group.calendar.google.com' 
+			googleCalendarId:'btia3tuqhgiq8vuun1p377t2gg@group.calendar.google.com',
 		},
 		{
-			googleCalendarId:'rl5e5us91t88ihuhms6d1jkn44@group.calendar.google.com' 
+			googleCalendarId:'rl5e5us91t88ihuhms6d1jkn44@group.calendar.google.com',
 		},
 		{
-			googleCalendarId:'lg4nnf5a82c5ipsuhak50okcqc@group.calendar.google.com' 
+			googleCalendarId:'lg4nnf5a82c5ipsuhak50okcqc@group.calendar.google.com',
 		},
 		{
-			googleCalendarId:'tq0jq89u6d2dvirb8esem8fjt4@group.calendar.google.com' 
+			googleCalendarId:'tq0jq89u6d2dvirb8esem8fjt4@group.calendar.google.com',
+			color: 'green', // Sports calendar
 		},
 		{
-			googleCalendarId:'hnpgt1opcl0q1gm91qqnpmhecvj1mpp1@import.calendar.google.com' 
+			googleCalendarId:'hnpgt1opcl0q1gm91qqnpmhecvj1mpp1@import.calendar.google.com',
 		},
 		{
-			googleCalendarId:'tc8fl1stcbrqdt9s3aa0k9h7ak@group.calendar.google.com' 
+			googleCalendarId:'tc8fl1stcbrqdt9s3aa0k9h7ak@group.calendar.google.com',
 		},
 		{
-			googleCalendarId: 'palychoirs@gmail.com' 
+			googleCalendarId: 'palychoirs@gmail.com',
 		},
 		{
-			googleCalendarId:'ipcq1o1l27kq5f20pbh83itqc@group.calendar.google.com' 
+			googleCalendarId:'ipcq1o1l27kq5f20pbh83itqc@group.calendar.google.com',
 		},
 		{
-			googleCalendarId:'kd9l7fmgu6ftm6v5r00ii7ihco@group.calendar.google.com' 
+			googleCalendarId:'kd9l7fmgu6ftm6v5r00ii7ihco@group.calendar.google.com',
 		},
 		{
-			googleCalendarId:'54evsbvsiaaaba93asoce9gmho@group.calendar.google.com' 
+			googleCalendarId:'54evsbvsiaaaba93asoce9gmho@group.calendar.google.com',
 		},
 		{
-			googleCalendarId:'46iel0bugr4c0hm5uvu5enh42s@group.calendar.google.com' 
+			googleCalendarId:'46iel0bugr4c0hm5uvu5enh42s@group.calendar.google.com',
 		},
     ]
   });
