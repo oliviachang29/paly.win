@@ -48,6 +48,14 @@ html, body {
   margin: 0;
 }
 
+.transition-fade {
+    transition: .2s;
+    opacity: 1;
+}
+html.is-animating .transition-fade{
+    opacity: 0;
+}
+
 * {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
@@ -195,10 +203,8 @@ a {
     </ul>
 </nav>
 <div id="wrap">
-	<div id="main" class="container">
-		<div id="barba-wrapper">
-			<div class="barba-container">
-				<!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<main id="swup" class="transition-fade container">
+		<!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"
 style="display:block"
 data-ad-client="ca-pub-6379400738810441"
@@ -216,81 +222,27 @@ data-ad-format="auto"></ins>
 </nav>
 <h1>Calendar</h1>
 <div class="iframe-container">
-	<iframe class="iframe-md" src="https://www.google.com/calendar/embed?showTitle=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=rl5e5us91t88ihuhms6d1jkn44%40group.calendar.google.com&amp;color=%23856508&amp;src=lg4nnf5a82c5ipsuhak50okcqc%40group.calendar.google.com&amp;color=%23B1365F&amp;src=tq0jq89u6d2dvirb8esem8fjt4%40group.calendar.google.com&amp;color=%23711616&amp;src=tc8fl1stcbrqdt9s3aa0k9h7ak%40group.calendar.google.com&amp;color=%235C1158&amp;src=palycalendar%40gmail.com&amp;color=%23125A12&amp;src=ipcq1o1l27kq5f20pbh83it5qc%40group.calendar.google.com&amp;color=%235A6986&amp;src=kd9l7fmgu6ftm6v5r00ii7ihco%40group.calendar.google.com&amp;color=%236B3304&amp;src=54evsbvsiaaaba93asoce9gmho%40group.calendar.google.com&amp;color=%232952A3&amp;src=46iel0bugr4c0hm5uvu5enh42s%40group.calendar.google.com&amp;color=%23BE6D00&amp;src=palychoirs%40gmail.com&amp;color=%23182C57&amp;src=btia3tuqhgiq8vuun1p377t2gg%40group.calendar.google.com&amp;color=%23AB8B00&amp;src=hnpgt1opcl0q1gm91qqnpmhecvj1mpp1%40import.calendar.google.com&amp;color=%23711616&amp;ctz=America%2FLos_Angeles" id="IFR" style="background-color: #fff;"></iframe>
+	<iframe class="iframe-md" src="https://www.google.com/calendar/embed?showTitle=0&height=600&wkst=1&bgcolor=%23FFFFFF&
+src=rl5e5us91t88ihuhms6d1jkn44%40group.calendar.google.com&color=%232F6309&
+src=btia3tuqhgiq8vuun1p377t2gg%40group.calendar.google.com&color=%23856508&
+src=lg4nnf5a82c5ipsuhak50okcqc%40group.calendar.google.com&color=%238C500B&
+src=tc8fl1stcbrqdt9s3aa0k9h7ak%40group.calendar.google.com&color=%236B3304&
+src=sh7d23sv7o17b7mp2t28ccssa8%40group.calendar.google.com&color=%23BE6D00&
+src=palycalendar%40gmail.com&color=%23125A12&
+src=pausd.org_ahtq44q6btk7jm8g9sts69s5f8%40group.calendar.google.com&
+src=ipcq1o1l27kq5f20pbh83it5qc%40group.calendar.google.com&color=%232952A3&
+src=kd9l7fmgu6ftm6v5r00ii7ihco%40group.calendar.google.com&color=%236B3304&
+src=54evsbvsiaaaba93asoce9gmho%40group.calendar.google.com&color=%2342104A&
+src=46iel0bugr4c0hm5uvu5enh42s%40group.calendar.google.com&color=%230F4B38&
+
+ctz=America%2FLos_Angeles" id="IFR" style="background-color: #fff;"></iframe>
 </div>
-			</div>
-		</div>
-	</div>
+	</main>
 </div>
-<script src="/assets/js/main.js" type="text/javascript"></script>
 <link rel="stylesheet" href="/assets/css/main_css_file.css">
 <script src='/assets/js/jquery.min.js'></script>
-<script src='/assets/js/moment.min.js'></script>
-<script src='/assets/js/fullcalendar.min.js'></script>
-<script src='/assets/js/gcal.min.js'></script>
-
-
-<script type='text/javascript'>
-
-$(function() {
-  $('#calendar').fullCalendar({
-	  views: {
-	    myList: {
-	      type: 'list',
-	      // duration: { days: 30 },
-	      visibleRange: function(currentDate) {
-		    return {
-		      start: currentDate,
-		      end: currentDate.clone().add(30, 'days') // exclusive end, so 3
-		    };
-		  }
-	    }
-	  },
-	  defaultView: 'myList',
-      googleCalendarApiKey: 'AIzaSyAtvlsLDs29zQ5FXagThJitN9-_kuxigkA',
-    eventSources:
-    [
-	    {
-	      googleCalendarId: 'palycalendar@gmail.com'
-	    },
-	    {
-			googleCalendarId:'btia3tuqhgiq8vuun1p377t2gg@group.calendar.google.com' 
-		},
-		{
-			googleCalendarId:'rl5e5us91t88ihuhms6d1jkn44@group.calendar.google.com' 
-		},
-		{
-			googleCalendarId:'lg4nnf5a82c5ipsuhak50okcqc@group.calendar.google.com' 
-		},
-		{
-			googleCalendarId:'tq0jq89u6d2dvirb8esem8fjt4@group.calendar.google.com' 
-		},
-		{
-			googleCalendarId:'hnpgt1opcl0q1gm91qqnpmhecvj1mpp1@import.calendar.google.com' 
-		},
-		{
-			googleCalendarId:'tc8fl1stcbrqdt9s3aa0k9h7ak@group.calendar.google.com' 
-		},
-		{
-			googleCalendarId: 'palychoirs@gmail.com' 
-		},
-		{
-			googleCalendarId:'ipcq1o1l27kq5f20pbh83itqc@group.calendar.google.com' 
-		},
-		{
-			googleCalendarId:'kd9l7fmgu6ftm6v5r00ii7ihco@group.calendar.google.com' 
-		},
-		{
-			googleCalendarId:'54evsbvsiaaaba93asoce9gmho@group.calendar.google.com' 
-		},
-		{
-			googleCalendarId:'46iel0bugr4c0hm5uvu5enh42s@group.calendar.google.com' 
-		},
-    ]
-  });
-});
-
-</script>
+<script src='/assets/js/swup.min.js'></script>
+<script src="/assets/js/main.js" type="text/javascript"></script>
 
 <footer>
 	<div class="container">
