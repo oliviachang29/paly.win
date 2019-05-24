@@ -4,7 +4,7 @@ layout: ad-top
 
 {{content}}
 {% if page.original_link != "false" %}
-	<!-- <a href="{{ page.link }}">Link to PDF</a> -->
+	<a href="{{ page.link }}" target="_">Open PDF in new tab</a>
 {% endif %}
 <div class="iframe-container">
 	<iframe src={{ page.link }} id="IFR" style="background-color: #fff;"></iframe>
