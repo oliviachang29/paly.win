@@ -4,7 +4,7 @@ ruby RUBY_VERSION
 gem "jekyll", ">= 3.6.3"
 gem "minima", "~> 2.0"
 gem "ffi", ">= 1.9.24"
-gem "nokogiri", ">= 1.8.5"
+gem "nokogiri", ">= 1.10.4"
 
 
 group :development do

@@ -65,7 +65,7 @@ GEM
       jekyll (~> 3.3)
     multi_json (1.12.1)
     nenv (0.3.0)
-    nokogiri (1.10.3)
+    nokogiri (1.10.4)
       mini_portile2 (~> 2.4.0)
     notiffany (0.1.1)
       nenv (~> 0.1)
@@ -102,10 +102,10 @@ DEPENDENCIES
   hawkins
   jekyll (>= 3.6.3)
   minima (~> 2.0)
-  nokogiri (>= 1.8.5)
+  nokogiri (>= 1.10.4)
 
 RUBY VERSION
-   ruby 2.3.1p112
+   ruby 2.3.0p0
 
 BUNDLED WITH
    2.0.1
